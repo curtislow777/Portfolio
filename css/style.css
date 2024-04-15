@@ -1,12 +1,13 @@
 @font-face {
   font-family: 'Pangolin';
-  src: url('fonts/Pangolin-Regularttf') format('truetype');
+  src: url('/fonts/Pangolin-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'SingleDay';
-  src: url('fonts/SingleDay') format('truetype');
+  src: url('/fonts/SingleDay-Regular.ttf') format('truetype');
 }
+
 
 :root {
   --bs-black: #000;
@@ -32,7 +33,7 @@
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --body-font-size: 1rem;
+  --body-font-size: 1.25rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
@@ -88,6 +89,8 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-family: 'SingleDay', sans-serif;  /* Set SingleDay as the default font for content */
+
 }
 
 
