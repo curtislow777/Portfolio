@@ -8,6 +8,11 @@
   src: url('/fonts/SingleDay-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Petit';
+  src: url('/fonts/Petit Cochon.ttf') format('truetype');
+}
+
 
 :root {
   --bs-black: #000;
@@ -66,36 +71,77 @@
   }
 }
 
-
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-#hero {
+.hero {
+  position: relative; /* Allows absolute positioning inside */
   width: 100%;
-  height: 100vh;
-  background: url("/assets/sdc.jpg") top right no-repeat;
+  min-height: 120vh;
+  background-image: url('/assets/img/main_bg.png');
+  background-position: center 50px;
   background-size: cover;
-  position: relative;
+  padding-top: 20%;
+  overflow: hidden; /* Ensures no overflow outside the hero area */
 }
 
-@media (min-width: 992px) {
-  #hero {
-    padding-left: 160px;
-  }
+.hero-content {
+  position: relative; /* Ensures content is above the new image */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  z-index: 1; /* Ensures text appears above the image */
 }
 
-#hero:before {
-  content: "";
-  background: rgba(255, 255, 255,0.5);
+.hero-image-right {
   position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+  right: 175px;
+  top: 250px;
+  background-image: url('/assets/img/me/us4.PNG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 400px; /* Confirm this dimension */
+  height: 60%; /* Confirm this dimension */
+  box-sizing: border-box; /* Includes padding and border in the height/width */
 }
 
 
+/*
+background-color: rgb(44, 62, 80);
+*/
+.about-section{
+  background-color: rgb(130, 170, 210);
+  padding: 8rem 0;
+  color: white;
+}
 
+
+.about-me{
+  font-size: 20px;
+  padding: 75px;
+  text-align: center;
+}
+  
+.circle-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #6c757d; /* Change background color as needed */
+  color: white; /* Change icon color as needed */
+  margin: auto;
+  font-size: 30px;
+}
+.card {
+  background: none;
+  border: none;
+}
+.card-body {
+  transition: transform 0.3s;
+}
+.card-body:hover {
+  transform: scale(1.05);
+}
 
 /* Base styles */
 body {
@@ -121,6 +167,7 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
   font-family: 'SingleDay', sans-serif;  /* Set SingleDay as the default font for content */
+  font-size: 1.25rem;
 
 }
 
@@ -1386,7 +1433,9 @@ button:not(:disabled),
 
 .page-section {
   padding: 6rem 0;
+
 }
+
 .page-section .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
@@ -1452,6 +1501,15 @@ button:not(:disabled),
   font-weight: 900;
 
 }
+
+.navbar-brand .brand-text {
+  color: #ffffff; /* White text */
+  font-size: 32px;
+  font-family: 'Petit'; /* Arial font */
+  margin-left: 10px; /* Space between logo and text */
+  vertical-align: middle; /* Align text with the image */
+}
+
 #mainNav .navbar-brand {
   color: #fff;
 }
@@ -1932,3 +1990,83 @@ button:not(:disabled),
   width: 400px;
 }
 
+
+.pa-container {
+  display: flex; /* Enable flexbox layout for the container */
+  justify-content: center;
+}
+.pa-container img{
+  width: 500px;
+  margin: 10px; /* Add spacing between images (optional) */
+
+}
+
+.yootoob {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically if there's enough height */
+}
+
+
+.yootoob iframe {
+    position: relative;
+    width: 800px;
+    height: 400px;
+}
+
+.sketchfab-embed-wrapper
+{
+  padding-top: 25;
+  padding-bottom: 25px;
+}
+
+
+.carousel-caption{
+  color: black;
+}
+
+.carousel-container{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 25px;
+}
+
+.carousel-item img {
+  width: 100%; /* Makes the image responsive */
+  height: 500px; /* Sets a fixed height */
+  object-fit: contain; /* Ensures the image covers the area without distorting aspect ratio */
+}
+
+#houses-carousel{
+  max-width: 100%;
+  overflow: hidden; /* Prevents any overflow from the fixed height images */
+  padding: 25px;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Ensures no overflow from images */
+}
+
+
+@media (max-width: 768px) {
+  .carousel-item img {
+      height: 300px; /* Smaller height for smaller devices */
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    border-radius: 8px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  display: inline-block;
+  background-color: black;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}

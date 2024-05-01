@@ -21,8 +21,12 @@
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">bing bong</a>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.png" alt="Logo" style="height: ;">
+                    <span class="brand-text"></span> <!-- Wrap the text for specific styling -->
+                </a> 
+
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -40,62 +44,155 @@
             </div>
         </nav>
 
-        <!-- ======= Hero Section ======= -->
-        <section id="hero" class="d-flex flex-column justify-content-center">
-            <div class="container">
-            
 
-
-
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="hero-header">hello, <br> my name is curt</h1>
+                <p class="hero-text">I'm a Year 3 Immersive Media student from ngeeeeeee aaaaaaaannnnn</p>
 
             </div>
-        </section>
-        <!-- End Hero -->
+            <div class="hero-image-right"></div> <!-- New image container -->
 
 
-        <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
+
+        </div>
+
+        <!-- <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" src="assets/sdc.jpg" alt="..." />
-                <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0"> nimama</h1>
-                <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Masthead Subheading-->
                 <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p>
             </div>
-        </header>
+        </header> -->
 
         <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
+        <section class="about-section" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <h2 class="page-section-heading text-center text-uppercase">About</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
+                <div class="divider-custom divider-dark">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fa-solid fa-graduation-cap"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+                    <div>
+                        <p class="about-me">
+                            Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
+                        </p>
+                    </div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://youtu.be/tzyCtWnHUgw">
-                        <i class="fas fa-download me-2"></i>
-                        Free Download!
+                    <a class="btn btn-xl btn-outline-dark" href="https://youtu.be/tzyCtWnHUgw">
+                        <i class="fa-solid fa-file"></i>
+                        My Resume
                     </a>
                 </div>
             </div>
         </section>
+
+
+
+
+
+        <section class="skillset py-5">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Skillset</h2>
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Each skillset item -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <div class="circle-icon mb-3">
+                                    <i class="fa-solid fa-code"></i>
+                                </div>
+                                <h4 class="card-title">Web Development</h4>
+                                <p class="card-text">HTML, CSS, JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <div class="circle-icon mb-3">
+                                    <i class="fa-solid fa-layer-group"></i>
+                                </div>
+                                <h4 class="card-title">UI/UX Design</h4>
+                                <p class="card-text">Sketch, Figma, Adobe XD</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <div class="circle-icon mb-3">
+                                    <i class="fa-solid fa-camera"></i>
+                                </div>
+                                <h4 class="card-title">Photography</h4>
+                                <p class="card-text">Portrait and landscape photography</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat for the second row of skills -->
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Each skillset item -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <div class="circle-icon mb-3">
+                                    <i class="fa-solid fa-code"></i>
+                                </div>
+                                <h4 class="card-title">Web Development</h4>
+                                <p class="card-text">HTML, CSS, JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <div class="circle-icon mb-3">
+                                    <i class="fa-solid fa-layer-group"></i>
+                                </div>
+                                <h4 class="card-title">UI/UX Design</h4>
+                                <p class="card-text">Sketch, Figma, Adobe XD</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <div class="circle-icon mb-3">
+                                    <i class="fa-solid fa-camera"></i>
+                                </div>
+                                <h4 class="card-title">Photography</h4>
+                                <p class="card-text">Portrait and landscape photography</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat for the second row of skills -->
+                </div>
+            </div>
+        </section>
+        
+
+
+
+        
         <!-- Contact Section-->
         <section class="page-section" id="contact">
             <div class="container">
