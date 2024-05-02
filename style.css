@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'Pangolin';
-  src: url('/fonts/Pangolin-Regular.ttf') format('truetype');
+  src: url('./fonts/Pangolin-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'SingleDay';
-  src: url('/fonts/SingleDay-Regular.ttf') format('truetype');
+  src: url('./fonts/SingleDay-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Petit';
-  src: url('/fonts/Petit Cochon.ttf') format('truetype');
+  src: url('./fonts/Petit Cochon.ttf') format('truetype');
 }
 
 
@@ -75,7 +75,7 @@
   position: relative; /* Allows absolute positioning inside */
   width: 100%;
   min-height: 120vh;
-  background-image: url('/assets/img/main_bg.png');
+  background-image: url('./assets/img/main_bg.png');
   background-position: center 50px;
   background-size: cover;
   padding-top: 20%;
@@ -94,7 +94,7 @@
   position: absolute;
   right: 175px;
   top: 250px;
-  background-image: url('/assets/img/me/us4.PNG');
+  background-image: url('./assets/img/me/us4.PNG');
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
