@@ -2070,3 +2070,21 @@ button:not(:disabled),
   background-position: 50%;
   background-size: 100% 100%;
 }
+
+
+.project-intro{
+  background-color: rgb(130, 170, 210);
+  padding: 8rem 0;
+  color: white;
+}
+
+
+
+
+#threed-projects{
+background-color: #BAE6FF;
+}
+
+#coding-projects{
+  background-color:rgb(130, 170, 210);
+}
