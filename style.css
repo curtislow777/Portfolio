@@ -127,8 +127,8 @@ background-color: rgb(44, 62, 80);
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #6c757d; /* Change background color as needed */
-  color: white; /* Change icon color as needed */
+  background-color: #BAE6FF; 
+  color: rgb(104, 104, 104); 
   margin: auto;
   font-size: 30px;
 }
