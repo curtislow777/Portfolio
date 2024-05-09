@@ -2084,6 +2084,10 @@ background-color: #BAE6FF;
   background-color:rgb(130, 170, 210);
 }
 
+#design-projects {
+  background-color: #E0E8EF;
+}
+
 .masonry-container {
   /* Optional: Set a fixed width for the container */
   max-width: 1200px;
@@ -2107,4 +2111,22 @@ background-color: #BAE6FF;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+
+.contact-section {
+margin: 100px;
+padding-top: 100px;
+}
+
+.contact-section .contact-section-heading {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+@media (min-width: 992px) {
+  .contact-section .contact-section-heading {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
 }
