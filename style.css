@@ -94,8 +94,7 @@
   position: absolute;
   right: 175px;
   top: 250px;
- /* background-image: url('./assets/img/me/us4.PNG');*/
-   background-image: url('./assets/sdc.jpg');
+  background-image: url('./assets/img/me/us4.PNG');
 
   background-size: cover;
   background-repeat: no-repeat;
