@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
 
         <link href="style.css" rel="stylesheet" />
     </head>
@@ -254,7 +255,7 @@
         <section class="page-section portfolio" id="2d-projects">
             <div class="project-container">
                 <!-- 3D Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Graphic Designs</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Graphic Design</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -301,7 +302,7 @@
                             <img class="img-fluid" src="assets/img/artboarde.png" alt="..." style="background-color: red; border: 3px solid black;" />
                             <!-- Header text for the portfolio item -->
                             <div class="portfolio-item-header text-center">
-                                <h3>android moment</h3>
+                                <h3>android </h3>
                             </div>
                         </div>
                     </div>
@@ -355,9 +356,15 @@
             </div>
         </section>
 
-
-
-
+        <div class="masonry-container">
+            <div class="masonry-item">
+              <img src="assets/img/mad_scientist/board.png" alt="Image 1">
+            </div>
+            <div class="masonry-item">
+              <img src="assets/img/mad_scientist/card_back.png" alt="Image 2">
+            </div>
+            <!-- Add more masonry items as needed -->
+          </div>
 
         <!-- Footer-->
         <footer class="footer text-center">
@@ -469,11 +476,6 @@
                                         <iframe width="560" height="315" src="https://www.youtube.com/embed/mLY4EH-PCTM?si=Sej651KuHet_JEDK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                     </div>
 
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -618,11 +620,7 @@
                                         <img class="img-fluid rounded mb-5 float-right" src="assets/img/asian/pagoda2.png " alt="Image 2" >
                                     </div>
                                     
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
+
                                 </div>
                             </div>
                         </div>
@@ -714,12 +712,6 @@
 
 
 
-
-
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1147,10 +1139,15 @@
 
                                     <!-- Portfolio Modal - Text-->
                                     <h3 class="text-secondary mb-3"> Main Menu </h3>
-                                    <img class="img-fluid rounded mb-5" src="assets/img/stonk_menu.png" alt="..." style="width: 600px; height: auto;">
+                                    <div class="yootoob">
+                                        <img class="img-fluid rounded mb-5" src="assets/img/stonk_menu.png" alt="..." style="width: 600px; height: auto;">
+                                    </div>
 
                                     <h3 class="text-secondary mb-3"> Authentication </h3>
-                                    <img class="img-fluid rounded mb-5" src="assets/img/stonk_authentication.png" alt="..." style="width: 600px; height: auto;">
+
+                                    <div class="yootoob">
+                                        <img class="img-fluid rounded mb-5" src="assets/img/stonk_authentication.png" alt="..." style="width: 600px; height: auto;">
+                                    </div>
 
                                     <h3 class="text-secondary mb-3"> Gameplay </h3>
                                     <div class="yootoob">
@@ -1158,14 +1155,11 @@
                                     </div>
 
                                     <h3 class="text-secondary mb-3"> Leaderboard </h3>
-                                    <img class="img-fluid rounded mb-5" src="assets/img/stonk_board.png" alt="..." style="width: 600px; height: auto;">
 
+                                    <div class="yootoob">
+                                        <img class="img-fluid rounded mb-5" src="assets/img/stonk_board.png" alt="..." style="width: 600px; height: auto;">
+                                    </div>
 
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1443,12 +1437,6 @@
                                           <span class="visually-hidden">Next</span>
                                         </button>
                                       </div>
-
-
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1539,12 +1527,6 @@
 
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/mLY4EH-PCTM?si=Sej651KuHet_JEDK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1891,7 +1873,7 @@
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/9yGZ38B9KuQ?si=sfkxKREhOR-7xIko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                                     <h3 class="text-secondary mb-3"> Leaderboard </h3>
-                                    <img class="img-fluid rounded mb-5" src="assets/img/stonk_board.pngd                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         " alt="..." style="width: 600px; height: auto;">
+                                    <img class="img-fluid rounded mb-5" src="assets/img/stonk_board.png                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         " alt="..." style="width: 600px; height: auto;">
 
 
 
@@ -1956,7 +1938,7 @@
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/9yGZ38B9KuQ?si=sfkxKREhOR-7xIko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                                     <h3 class="text-secondary mb-3"> Leaderboard </h3>
-                                    <img class="img-fluid rounded mb-5" src="assets/img/stonk_board.pngd                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         " alt="..." style="width: 600px; height: auto;">
+                                    <img class="img-fluid rounded mb-5" src="assets/img/stonk_board.png                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         " alt="..." style="width: 600px; height: auto;">
 
 
 
@@ -2021,7 +2003,7 @@
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/9yGZ38B9KuQ?si=sfkxKREhOR-7xIko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                                     <h3 class="text-secondary mb-3"> Leaderboard </h3>
-                                    <img class="img-fluid rounded mb-5" src="assets/img/stonk_board.pngd                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         " alt="..." style="width: 600px; height: auto;">
+                                    <img class="img-fluid rounded mb-5" src="assets/img/stonk_board.png                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   " alt="..." style="width: 600px; height: auto;">
 
 
 
@@ -2039,14 +2021,11 @@
         </div>
 
 
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="masonry-docs/js/masonry-docs.min.js"></script>
     </body>
 </html>

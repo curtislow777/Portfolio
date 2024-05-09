@@ -1,11 +1,3 @@
-/*!
-* Start Bootstrap - Freelancer v7.0.7 (https://startbootstrap.com/theme/freelancer)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -52,3 +44,27 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+const Masonry = require('masonry-layout');
+
+import Masonry from 'masonry-layout';
+
+
+window.addEventListener('load', function() {
+    var container = document.querySelector('.masonry-container');
+    var masonry = new Masonry(container, {
+      itemSelector: '.masonry-item',
+      columnWidth: '.masonry-item',
+      gutter: 10, /* Adjust the gutter size as needed */
+    });
+  
+    var images = container.querySelectorAll('.masonry-item img');
+    images.forEach(function(image) {
+      image.addEventListener('load', function() {
+        var item = image.parentNode;
+        if (image.height < item.offsetHeight) {
+          item.classList.add('masonry-item--centered');
+        }
+      });
+    });
+  });
