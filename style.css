@@ -1602,7 +1602,8 @@ button:not(:disabled),
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
-  display: block;
+  display: inline-block; /* Change display to inline-block */
+  width: 100%; /* Add width: 100% to ensure items span full width */
 }
 
 .portfolio .portfolio-item img {
@@ -1612,6 +1613,13 @@ button:not(:disabled),
   border-radius: 10px; /* Optional: adds rounded corners to the thumbnails */
 }
 
+.portfolio .portfolio-item .portfolio-item-wrapper {
+  position: relative;
+}
+
+.portfolio .portfolio-item:hover .portfolio-item-caption {
+  opacity: 1;
+}
 
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
@@ -1619,16 +1627,15 @@ button:not(:disabled),
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(140, 151, 149, 0.79); /* Preserved for hover effect */
-}
-
-.portfolio .portfolio-item .portfolio-item-caption:hover {
-  opacity: 1;
+  background-color: rgba(140, 151, 149, 0.6); /* Preserved for hover effect */
+  border-radius: 10px;
 }
 
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
-  font-size: 1.5rem; /* Preserved for content visibility */
+  font-size: 1.5rem; 
 }
+
+
 
 
 .portfolio-modal .btn-close {
@@ -1656,9 +1663,9 @@ button:not(:disabled),
 
 
 .modal-image {
-  max-width: 300px;    /* Restricts the image's maximum width to 50% of its container */
-  display: block;    /* Necessary for centering */
-  margin: 0 auto;    /* Centers the image horizontally */
+  max-width: 300px;    
+  display: block;     
+  margin: 0 auto;    
 }
 .preview-img {
   display: flex;    /* Necessary for centering */
@@ -2118,7 +2125,40 @@ background-color: #BAE6FF;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px; 
+
 }
+
+.photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px; /* Ensures the description also conforms to the border radius */
+}
+
+.description {
+  position: absolute;
+  top: 0; /* Start from the top */
+  left: 0;
+  right: 0;
+  bottom: 0; /* Extend to the bottom */
+  background-color: rgba(72, 68, 68, 0.6); /* Semi-transparent black background */
+  color: #fff; /* White text color */
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 1rem;
+}
+
+.photo:hover .description {
+  opacity: 1; 
+}
+
 
 .photo img {
   width: 100%;
@@ -2130,9 +2170,19 @@ background-color: #BAE6FF;
     flex-direction: column;
   }
 }
+  
+.slideshow img {
+  display: none;
+  width: 100%; /* Ensures the image takes the full width of its container */
+  height: auto; /* Keeps the image aspect ratio intact */
+}
+
+.slideshow img:first-child {
+  display: block; /* Only the first image is shown initially */
+}
+
 
 /* CONTACT PAGE */
-
 .contact-section {
 margin: 100px;
 padding-top: 100px;
