@@ -2084,11 +2084,12 @@ button:not(:disabled),
 
 
 #threed-projects{
-background-color: #BAE6FF;
+background-color:rgb(130, 170, 210);
+
 }
 
 #coding-projects{
-  background-color:rgb(130, 170, 210);
+  background-color: #BAE6FF;
 }
 
 #design-projects {
@@ -2169,6 +2170,15 @@ background-color: #BAE6FF;
   .photo-gallery {
     flex-direction: column;
   }
+}
+.btn-custom {
+  color: rgb(104, 104, 104); /* Text color */
+  background-color: #BAE6FF; /* Custom background color */
+}
+
+.btn-custom:hover {
+  color: rgb(104, 104, 104); /* Text color */
+  background-color: #88d3ff; /* Custom background color */
 }
   
 .slideshow img {
