@@ -2192,6 +2192,16 @@ background-color:rgb(130, 170, 210);
 }
 
 
+.section-title {
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+.subsection-title {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+
 /* CONTACT PAGE */
 .contact-section {
 margin: 100px;
