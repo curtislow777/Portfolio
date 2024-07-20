@@ -2313,5 +2313,29 @@ padding-top: 100px;
   }
 }
 
+.lottie-animation {
+  /* Common styles for all animations */
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
 
+.lottie-blink {
+  /* Specific styles for the blink animation */
+  margin-top: 17px;
+  height: 200px; /* Adjust as needed */
+}
 
+.lottie-mail {
+  /* Specific styles for the mail animation */
+  height: 300px; /* Adjust as needed */
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+  .lottie-blink, .lottie-mail {
+    height: 200px; /* Adjust as needed for smaller screens */
+  }
+}
