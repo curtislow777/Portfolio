@@ -97,6 +97,7 @@
                 <div class="row align-items-center">
                     <!-- GIF Column -->
                     <div class="col-lg-4 text-center" id="animation-container">
+                        <div class="lottie-animation lottie-game" id="game-container"></div>
 
 
                     </div>
@@ -250,7 +251,7 @@
 
         <script>
             var animation = bodymovin.loadAnimation({
-                container: document.getElementById('animation-container'),
+                container: document.getElementById('game-container'),
                 path:"assets/gifs/game.json",
                 renderer: 'svg',
                 loop: true,
