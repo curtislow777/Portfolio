@@ -14,10 +14,11 @@
 }
 
 
+
 :root {
   --bs-black: #000;
   --bs-white: #fff;
-  --bs-primary: #1abc9c;
+  --bs-primary: #c0e4fc;
   --bs-secondary: #2c3e50;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -71,6 +72,182 @@
   }
 }
 
+/* Custom button styling */
+.menu-btn {
+  background-color: #BAE6FF; /* Change to your desired background color */
+  color:  rgb(104, 104, 104); /* Change to your desired text color */
+  border: none; /* Remove default border if needed */
+}
+
+/* Optional: Hover and focus states */
+.menu-btn:hover,
+.menu-btn:focus {
+  background-color: #88d3ff; /* Darker shade for hover/focus */
+  color:  rgb(104, 104, 104); /* Change text color on hover/focus if needed */
+}
+
+.supa-container {
+  margin-top: 112px; /* Space for the fixed navbar */
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 113px); /* Adjust to fit below the navbar */
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  background-image: url('./assets/img/main_bg.png');
+  background-position: center center; /* Center the background image */
+  background-size: cover; /* Ensure the image covers the container */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  overflow: hidden;
+}
+
+.supa-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: flex-start; /* Align text to the start */
+  gap: 20px;
+  height: 100%; /* Ensure content takes up full height */
+}
+
+.supa-text {
+  padding: 20px; /* Adjust padding as needed */
+  margin: 0; /* Remove margin */
+  margin-top: 50px;
+  margin-left: 205px;
+}
+
+.hello-container {
+  margin-left: 75px;
+}
+
+.hero-img {
+  margin-right: 175px;
+  top: 250px;
+  border: 10px solid rgb(130, 170, 210);
+  border-radius: 10px;
+  width: auto;
+  height: 75%; /* Adjust height to fit better within the container */
+  object-fit: contain; /* Ensure the image maintains aspect ratio */
+}
+
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .supa-container {
+      flex-direction: column;
+      height: auto;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center content vertically */
+      align-items: center;
+      text-align: center;
+  }
+  .supa-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Align text to the start */
+  }
+
+  .hero-img {
+      margin-right: 0;
+      margin-bottom: 20px;
+      max-width: 500px; /* Reduce max-width for medium screens */
+      max-height: auto; /* Reduce max-height for medium screens */
+  }
+
+  .supa-text {
+      margin-left: 0;
+      margin-top: 20px;
+      text-align: center;
+
+  }
+
+  .hello-container {
+      margin-left: 0;
+      text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .supa-container {
+      height: auto;
+      padding: 20px;
+  }
+
+  .hero-img {
+      max-width: 400px; /* Ensure image fits the container */
+      max-height: auto; /* Further adjust max-height for smaller screens */
+  }
+
+  .supa-text {
+      margin-left: 0;
+      margin-top: 20px;
+      text-align: center;
+      padding: 10px;
+  }
+
+
+  .hello-container {
+      margin-left: 0;
+      text-align: center;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-img {
+      max-width: 100%; /* Ensure image fits the container */
+      max-height: 30%; /* Adjust height for very small screens */
+  }
+
+  .supa-text {
+      margin-top: 10px;
+      font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+
+
+/* Responsive styles for hello-container */
+@media (max-width: 1200px) {
+  #hello-container {
+    max-width: 500px; /* Adjust maximum width for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  #hello-container {
+    max-width: 400px; /* Adjust maximum width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  #hello-container {
+    max-width: 300px; /* Adjust maximum width for very small screens */
+  }
+}
+
+.hero-image-right {
+  position: absolute;
+  right: 175px;
+  top: 250px;
+  background-image: url('./assets/img/me/us4.PNG');
+  border: 10px solid rgb(130, 170, 210);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 400px; /* Confirm this dimension */
+  height: 60%; /* Confirm this dimension */
+  box-sizing: border-box; /* Includes padding and border in the height/width */
+}
+
+
+
 .hero {
   position: relative; /* Allows absolute positioning inside */
   width: 100%;
@@ -79,11 +256,8 @@
   background-position: center 50px;
   background-size: cover;
   padding-top: 20%;
-  overflow: hidden; /* Ensures no overflow outside the hero area */
+  overflow: hidden; 
 }
-
-
-
 
 .hero-content {
   position: relative; /* Ensures content is above the new image */
@@ -1596,11 +1770,11 @@ button:not(:disabled),
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #1abc9c;
+    background: #c0e4fc;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #1abc9c;
+    background: #c0e4fc;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -1780,6 +1954,7 @@ button:not(:disabled),
 }
 
 .modal-dialog {
+  padding: 50px;
   position: relative;
   width: auto;
   margin: var(--bs-modal-margin);
@@ -1893,6 +2068,8 @@ button:not(:disabled),
   margin: calc(var(--bs-modal-footer-gap) * 0.5);
 }
 
+
+
 @media (min-width: 576px) {
   .modal {
     --bs-modal-margin: 1.75rem;
@@ -1907,6 +2084,10 @@ button:not(:disabled),
     --bs-modal-width: 300px;
   }
 }
+
+
+
+/* Adjust modal dialog width for larger screens */
 @media (min-width: 992px) {
   .modal-lg,
   .modal-xl {
@@ -2038,23 +2219,34 @@ button:not(:disabled),
   }
 }
 
+/* Ensures images are responsive */
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+
 .modal-text {
   font-size: 20px; /* Set a comfortable font size */
   color: black; /* Choose a color that's easy on the eyes */
-  line-height: 1.2; /* Increase line height for better readability */
+  line-height: 1.6; /* Increase line height for better readability */
   margin-bottom: 1em; /* Add space below the paragraph */
   text-align: left; /* Justify the text for a cleaner look */
-  padding: 20px; /* Padding inside the modal for spacing around the text */
+  padding: 15px; /* Padding inside the modal for spacing around the text */
 }
 
 .trim-container {
   display: flex; /* Enable flexbox layout for the container */
   justify-content: center;
+  flex-wrap: wrap; /* Allow images to wrap to the next line if necessary */
+
 }
 
 .asset-container {
   display: flex; /* Enable flexbox layout for the container */
   justify-content: center;
+  flex-wrap: wrap; /* Allow images to wrap to the next line if necessary */
+
 }
 
 .asset-container img {
@@ -2072,6 +2264,8 @@ button:not(:disabled),
 .pa-container {
   display: flex; /* Enable flexbox layout for the container */
   justify-content: center;
+  flex-wrap: wrap; /* Allow images to wrap to the next line if necessary */
+
 }
 .pa-container img{
   width: 500px;
